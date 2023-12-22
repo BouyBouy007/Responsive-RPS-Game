@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/mobile.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+ 
+</head>
+<body>
+  <header>
+    <img src="images/logo.svg">
+    <div class="score-container">
+      <div class="score-text">Score</div>
+      <div class="current-score"></div>
+    </div>
+  </header>
+  
+  <main>
+    <div class="game-container">
+      <button class="player-choice paper-choice"></button>
+      <button class="player-choice scissors-choice"></button>
+      <button class="player-choice rock-choice"></button>
+    </div>
+
+    <div class="rules-container">
+      <div class="rules-container-header">
+        Rules
+        <button class="close-button">
+          <img alt="close-icon" src="images/icon-close.svg">
+        </button>
+      </div>
+      <div class="rules-image-container">
+        <img alt="rules-image" src="images/image-rules.svg"> 
+      </div>
+    </div>
+
+    <div class="picks-container">
+      <div class="display-player-move-container">
+        <h1>You Picked</h1>
+        <div class="display-move-container">
+          <div class="player-move"></div>
+        </div>      
+      </div>
+
+      <div class="game-status-container">
+        <div class="game-message"></div>
+        <button class="play-again-button">Play Again</button>
+      </div>
+      
+      <div class="display-computer-move-container">
+        <h2>The House Picked</h2>
+        <div class="display-move-container">
+          <div class="computer-move"></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="button-container">
+      <button class="rules-button">
+        Rules
+      </button>
+      <button class="reset-button">
+        Reset Score
+      </button>
+    </div>
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Justin Seow Jing Nyap</a>.
+    </div>
+  </footer>
+  <script src="scripts/script.js"></script>
+</body>
+</html>

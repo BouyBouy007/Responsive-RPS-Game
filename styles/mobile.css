@@ -1,0 +1,126 @@
+@media (max-width: 375px) {
+  body {
+    min-width: 280px;
+    min-height: 800px;
+  }
+
+  header {
+    margin: 50px;
+    border-width: 4px;
+    border-radius: 6px;
+    padding: 12px 16px;
+  }
+
+  header img {
+    width: 50%;
+  }
+
+  .score-container {
+    border-radius: 6px;
+    padding: 10px 20px;
+  }
+
+  .score-text {
+    font-size: 10px;
+  }
+
+  .current-score {
+    font-size: 30px;
+  }
+
+  .game-container {
+    height: 300px;
+    width: 300px;
+  }
+
+  .game-container::before {
+    background-size: 50%;
+  }
+
+  .player-choice {
+    background-size: 50%;
+    padding: 30px;
+  }
+
+  .player-choice:before {
+    top: -15px;
+    bottom: -15px;
+    right: -15px;
+    left: -15px;
+  }
+
+  .rules-container {
+    max-width: 250px;
+    top: 30%;
+    left: 10%;
+  }
+
+  .rules-container-header {
+    font-size: 20px;
+  }
+
+  .button-container {
+    justify-content: space-between;
+    margin: 50px;
+  }
+
+  .button-container button {
+    margin-right: 0;
+  }
+
+  .picks-container {
+    flex-wrap: wrap;
+    gap: unset;
+  }
+
+  .display-player-move-container,
+  .display-computer-move-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 50%;
+  }
+
+  .game-status-container {
+    order: 3;
+  }
+
+  .player-move, .computer-move {
+    height: 65px;
+    width: 65px;
+    background-size: 50%;
+  }
+
+  .player-move::before,
+  .computer-move::before {
+    top: -15px;
+    bottom: -15px;
+    right: -15px;
+    left: -15px;
+  }
+
+  h1, h2 {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .display-move-container {
+    height: 100px;
+    width: 100px;
+  }
+
+  .is-winner::before {
+    box-shadow: 0 0 0 20px var(--dark-text), 
+                0 0 0 40px var(--radial-gradient-start), 
+                0 0 0 60px var(--radial-gradient-end);
+  }
+
+  .game-status-container {
+    margin-top: 60px;
+  }
+
+  .play-again-button {
+    padding: 14px 40px;
+    margin-top: 20px;
+  }
+}
